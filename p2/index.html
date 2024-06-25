@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodwazon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        body {
+            background-color: #ffc107; /* Background color similar to the image */
+        }
+        .navbar {
+            background-color: #ffffff; /* White background for the navbar */
+        }
+        .hero-header {
+            background-color: #ffc107;
+        }
+        .delivery-options {
+            background-color: #ffffff; /* White background for the delivery options */
+            padding: 20px;
+            border-radius: 8px;
+            display: inline-block;
+        }
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./image/logo.svg" alt="foodwaGon" style="height: 40px;">
+                    foodwaGon
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <p class="mb-0 ms-3">Deliver to: <strong>Current Location Mirpur 1 Bus Stand, Dhaka</strong></p>
+                    <form class="d-flex ms-auto" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search Food" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid hero-header text-center text-white py-5">
+        <div class="row">
+            <div class="col-md-6 align-self-center">
+                <h1 class="fw-bold">Are you starving?</h1>
+                <p class="lead">Within a few clicks, find meals that are accessible near you.</p>
+                <div class="delivery-options mt-4 ">
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="deliveryOption" id="delivery" checked>
+                        <label class="btn btn-outline-warning" for="delivery">Delivery</label>
+
+                        <input type="radio" class="btn-check" name="deliveryOption" id="pickup">
+                        <label class="btn btn-outline-warning" for="pickup">Pickup</label>
+                    </div>
+                    <div class="mt-3">
+                        <input type="text" class="form-control" placeholder="Enter Your Address">
+                        <button class="btn btn-warning mt-2">Find Food</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="./image/hero-header.png" alt="Hero Header" class="hero-image">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
